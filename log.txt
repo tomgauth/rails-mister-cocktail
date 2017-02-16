@@ -1,3 +1,32 @@
 "Follow the lecture's instructions about preparing your app for being hosted on Heroku."
 
+! "heroku create mr-cocktail-tomgauth --region eu" => command not found 'heroku'
+$ I had to install heroku
+! How to draw a database with data relationships
+  ? CHeck the slides
+$ Done
+- Not sure what to do with the database for now.
+- Moving on
+! "Validate all models tests before moving to the routing layer."
+  ? Create models first
+    ? check the slides and create models for cocktails, ingredients and doses
+    - rails generate model Cocktail name:string
+    $ worked
+  $
+$
+! I need to add things to the models
+  ? Can I do it without doing a migration
+    - I think I can, let's try
+    $ working
+  $
+$
+! Controller should exist for cocktails and Doses
+  ? check the slides for the right syntax
+  - Controller created but weird shit with the rake file. It seems that a method that I used is deprecated. Let's get some small wins elsewhere
+
+! Dose 'should have a description'
+  ? redo the migration of Dose adding a description
+  ! "relation 'doses' already exist"
+  $ Ticket
+$ Solved : needed to drop the database before
 
