@@ -1,0 +1,3 @@
+"Follow the lecture's instructions about preparing your app for being hosted on Heroku."
+
+
